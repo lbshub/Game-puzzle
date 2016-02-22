@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>拼图游戏</title>
+	<style type="text/css">
+		*{ margin:0; padding:0;}
+		#gameBox{ margin:0 auto; padding:50px; }
+	</style>
+</head>
+<body>
+
+<div id="gameBox"></div>
+
+<script type="text/javascript" src="lbsJS/lbsJS.min.js"></script>
+<script type="text/javascript" src="puzzle.js"></script>
+<script type="text/javascript">
+var imgdata = ['img/qingming_1.jpg','img/qingming_2.jpg','img/qingming_3.jpg'],
+	myPuzzle = new Puzzle({
+		parent: LBS.$('#gameBox'),
+		imgdata: imgdata
+	});
+</script>
+
+</body>
+</html>
